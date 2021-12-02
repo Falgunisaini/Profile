@@ -1,0 +1,115 @@
+body{
+    margin: auto;
+}
+
+#header{
+    height: 60px;
+    background-color: #C5C6C7;
+    font-size: 22px;
+}
+
+#header a{
+    text-decoration: none;
+    color: #1f2833;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px 0 0 0;
+}
+
+#main{
+    width: 100%;
+    display: inline-block;
+    height: 325px;
+    background-color: #515861;
+}
+
+#profileimg img{
+    border: 0.5px solid white;
+    float: right;
+    margin: 0 180px 0 0;
+    border-radius: 50%;
+}
+
+#name{
+    font-size: 72px;
+    text-align: center;
+    margin: 0 0 0 380px;
+    color: whitesmoke;
+}
+
+#about{
+    border: 2px solid #D1E8E2;
+    background-color: #eae7dc;
+}
+
+#about h2{
+    text-align: center;
+    color: #6e6658;
+    text-transform: uppercase;
+    text-decoration: bold;
+    text-decoration: underline;
+}
+
+#about p{
+    font-size: 18px;
+    /* color: #1f2833; */
+    color: #515861;
+    font-weight: bold;
+}
+
+
+#contact{
+    height: 475px;
+    border: 2px solid #eae7dc;
+    background-color: #eae7dc;
+}
+
+.image{
+    text-decoration: none;
+}
+
+.icons{
+    border-radius: 17%;
+    height: 50px;
+    width: 50px;
+    margin-top: 8px;
+}
+
+.icons:hover {
+    width:55px;
+    height:50px;
+    box-shadow: 0 10px 15px 0 #5a5458, 0 17px 40px 0 #171a1f;
+    transition-timing-function: ease-in-out;
+}
+
+#skills{
+    border: 2px solid #515861;
+    background-color: #515861;
+}
+
+#skills h2{
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: bold;
+    text-decoration: underline;
+}
+
+.skillicons{
+    width:60px;
+    height:60px;
+    border-radius: 7%;
+}
+
+#map{
+    width:50%;
+    height:450px;
+    background-color: #eae7dc;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+#footer{
+    border: 2px solid #d8eacc;
+    background-color: #C5C6C7;
+}
