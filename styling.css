@@ -2,16 +2,15 @@ body{
     margin: auto;
 }
 
+/* Header Starts */
 #header{
     height: 60px;
-    background-color: #C5C6C7;
     font-size: 22px;
-
 }
 
 #header a{
     text-decoration: none;
-    color: #1f2833;
+    color: #515861;
     font-weight: bolder;
     display: inline-block;
     padding: 5px; 
@@ -23,31 +22,37 @@ body{
     text-decoration: underline;
     font-size: 23px;
 }
+/* Header Ends */
 
+/* Main Div Starts */
 #main{
     width: 100%;
     display: inline-block;
     height: 325px;
-    background-color: #515861;
+    background-color: #C5C6C7;
 }
 
+/* Profile Picture */
 #profileimg img{
     border: 0.5px solid white;
     float: right;
-    margin: 0 180px 0 0;
+    margin-right: 12%;
     border-radius: 50%;
 }
 
+/* Name */
 #name{
     font-size: 72px;
     text-align: center;
-    margin: 0 0 0 380px;
-    color: whitesmoke;
+    margin-left: 28%;
+    color: #515861;
 }
+/* Main Div Ends */
 
+
+/* About Me Div Starts */
 #about{
     border: 2px solid #D1E8E2;
-    background-color: #eae7dc;
 }
 
 #about h2{
@@ -55,25 +60,112 @@ body{
     color: #6e6658;
     text-transform: uppercase;
     text-decoration: bold;
-    text-decoration: underline;
 }
 
 #about p{
     font-size: 18px;
-    /* color: #1f2833; */
     color: #515861;
     font-weight: bold;
     padding-left: 25px;
     padding-right: 25px;
 }
+/* About Me Div Ends */
 
 
-#contact{
-    height: 475px;
-    border: 2px solid #eae7dc;
-    background-color: #eae7dc;
+/* Skills Div starts */
+#skills{
+    border: 2px solid #C5C6C7;
+    background-color: #C5C6C7;
 }
 
+#skills h2{
+    text-align: center;
+    color: #515861;
+    text-transform: uppercase;
+    text-decoration: bold;
+}
+
+.skillicons{
+    width:60px;
+    height:60px;
+    border-radius: 7%;
+    margin: 0.2%;
+    margin-bottom: 1%;
+}
+ /* Skills Div Ends */
+
+ /* Contact Div Starts */
+#contact{
+    height: 570px;
+    border: 2px solid #eae7dc;
+    display: inline-block;
+    width: 100%;
+}
+
+#contactHeading{
+    text-align: center;
+    color: #6e6658;
+    text-transform: uppercase;
+    text-decoration: bold;
+}
+
+/* Map Starts */
+#map{
+    width:45%;
+    height:450px;
+    background-color: #eae7dc;
+    margin-top: 1%;
+    margin-bottom: 5%;  
+    margin-left: 5%;
+}
+
+/* ContactCard Div  Starts*/
+#contactCard{
+    width: 40%;
+    float: right;
+    background-color: #C5C6C7;
+    height: 450px;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+#contactSubHeading > h3{
+    font-size: 30px;
+    text-align: center;
+    color: #6e6658;
+    margin-top: 5%;
+}
+
+#field{
+    margin-top: 8%;
+}
+
+/* Input fields in ContactCard Div */
+.inputField{
+    width: 60%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 4%;
+    font-size: 15px;
+}
+
+#btn{
+    width: 70%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 22px;
+}
+/* ContactCard Div  Ends*/
+/* Contact Div Ends*/
+
+/* Footer starts */
+#footer{
+    border: 2px solid #d8eacc;
+    background-color: #C5C6C7;
+}
+
+/* Glyphicons in Footer */
 .image{
     text-decoration: none;
 }
@@ -91,36 +183,54 @@ body{
     box-shadow: 0 10px 15px 0 #5a5458, 0 17px 40px 0 #171a1f;
     transition-timing-function: ease-in-out;
 }
+/* Footer Ends */
 
-#skills{
-    border: 2px solid #515861;
-    background-color: #515861;
+/* Media Query starts */
+@media screen and (max-width:1200px) {
+    #profileimg img{
+        margin-right: 10%;
+    }
 }
 
-#skills h2{
-    text-align: center;
-    color: whitesmoke;
-    text-transform: uppercase;
-    text-decoration: bold;
-    text-decoration: underline;
+@media screen and (max-width:1000px) {
+    #name{
+        margin-left: 18%;
+    }
+    #profileimg img{
+        margin-right: 8%;
+    }
 }
 
-.skillicons{
-    width:60px;
-    height:60px;
-    border-radius: 7%;
-    padding-right: 3px;
+@media screen and (max-width:800px) {
+    #map{
+        width: 90%;
+        margin-left: 5%;
+        display: block;
+    }
+    #contact{
+        height: 1020px;
+    }
+    #contactCard{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #name{
+        margin-left: 16%;
+        margin-top: -1%;
+    }
+    #profileimg img{
+        margin-right: 5%;
+    }
 }
 
-#map{
-    width:50%;
-    height:450px;
-    background-color: #eae7dc;
-    margin-top: 10px;
-    margin-left: 25%;
+@media screen and (max-width:600px) {
+    #name{
+        margin-left: 5%;
+        margin-top: -1%;
+    }
+    #profileimg img{
+        margin-right: 2%;
+    }
+    
 }
-
-#footer{
-    border: 2px solid #d8eacc;
-    background-color: #C5C6C7;
-}
+/* Media Query Ends */

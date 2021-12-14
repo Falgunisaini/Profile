@@ -5,51 +5,75 @@
     <link href="styling.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <!--Header Starts-->
     <header id="header">
         <a href="#main">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </header>
+    <!--Header Ends-->
 
+    <!--Conatiner Starts-->
     <div id="container">
         <div id="main">
+
+            <!--Profile Picture-->
             <div id="profileimg">
                 <img src="images/img8.jpeg" alt="Profile Picture"/>
             </div>
+
+            <!--Name-->
             <div id="name">
                 <p>Hi, I am <br/>Falguni Saini.</p>
             </div>
         </div>
-        
+            
+        <!--About Me-->
         <div id="about">
             <h2>About me</h2>
             <p>
                 I was born and brought up in New Delhi. I have completed my graduation in Bachelors of Computer Applications from <em>Jagan Institute Of Management Studies</em>. Currently, I am pursuing post-graduation in the same field. I am an avid learner and I aspire to hone my technical as well as personal skills by learning new things with a broader perspective towards gaining knowledge.
             </p> 
         </div>
-
+        
+        <!--My Skills-->
         <div id="skills">
-            <h2>
-                Skills
-            </h2>
+            <h2>Skills</h2>
             <center>
                 <div id="skillimages">
-                    <img src="images/html.png" alt="Html" class="skillicons"/> 
+                    <img src="images/html5.png" alt="Html" class="skillicons"/> 
                     <img src="images/css.png" alt="Css" class="skillicons"/>
-                    <img src="images/js.png" alt="Javascript" class="skillicons"/>
+                    <img src="images/javascript.png" alt="Javascript" class="skillicons"/>
                     <img src="images/C.png" alt="C" class="skillicons"/>
                     <img src="images/c++.png" alt="C++" class="skillicons"/>
                 </div>
             </center>     
         </div>
-
+            
+        <!--Contact Info-->
         <div id="contact">
+            <h2 id="contactHeading">Contact</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.3315424613802!2d77.13264266348594!3d28.729934172488008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0113350a1cc9%3A0x9414aa708d9e7f00!2sB4%20Rd%2C%20Sector%2015%2C%20Rohini%2C%20Delhi%2C%20110089!5e0!3m2!1sen!2sin!4v1637497520156!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" id="map">
             </iframe>
+            <div id="contactCard">
+                <div id="contactSubHeading">
+                    <h3>Get in touch</h3>
+                </div>
+                <div id="field">
+                    <input type="text" class="inputField"  placeholder="Enter Name*" required/><br/>
+                    <input type="email" class="inputField" placeholder="Enter Email*" required/><br/>
+                    <input type="number" class="inputField" placeholder="Enter Contact Number*" required/><br/>
+                    <input type="textarea" class="inputField" placeholder="Enter Message*" required/><br/>
+                    <button id="btn" type="submit">Send Your Message</button>
+                </div>
+            </div>
         </div>
     </div>
+    <!--Container Ends-->
 
+
+    <!--Footer Starts-->
     <footer id="footer">
         <center>
             <div id="info">
@@ -69,6 +93,6 @@
             <h3>&copy; Falguni Saini</h3>
         </center>
     </footer>
-    
+    <!--Footer Ends-->
 </body>
 </html>
