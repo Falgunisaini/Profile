@@ -1,7 +1,9 @@
 <html>
 <head>
     <title>Profile</title>
-    <link href="images/img8.jpeg" rel="icon"/>
+    <link href="images/profileimg.jpg" rel="icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
     <link href="styling.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -10,6 +12,7 @@
         <a href="#main">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </header>
     <!--Header Ends-->
@@ -20,7 +23,7 @@
 
             <!--Profile Picture-->
             <div id="profileimg">
-                <img src="images/img8.jpeg" alt="Profile Picture"/>
+                <img src="images/profileimg.jpg" alt="Profile Picture"/>
             </div>
 
             <!--Name-->
@@ -51,6 +54,31 @@
             </center>     
         </div>
             
+        <!-- Projects Starts -->
+        <div id="projects">
+            <h2>Projects</h2>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card" id="card1">
+                        <img src="images/proj1.PNG" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <p class="card-text">FoodScape - An online food ordering website.</p>
+                            <a href="https://falgunisaini.github.io/FoodScape_Homepage/" class="btn btn-outline-success" target="_blank">Click here</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <img src="images/proj2.PNG" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <p class="card-text">BrewMuse - Starbucks Clone.</p>
+                            <a href="https://falgunisaini.github.io/BrewMuse/" class="btn btn-outline-success" target="_blank">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Contact Info-->
         <div id="contact">
             <h2 id="contactHeading">Contact</h2>
@@ -60,13 +88,24 @@
                 <div id="contactSubHeading">
                     <h3>Get in touch</h3>
                 </div>
-                <div id="field">
-                    <input type="text" class="inputField"  placeholder="Enter Name*" required/><br/>
-                    <input type="email" class="inputField" placeholder="Enter Email*" required/><br/>
-                    <input type="number" class="inputField" placeholder="Enter Contact Number*" required/><br/>
-                    <input type="textarea" class="inputField" placeholder="Enter Message*" required/><br/>
-                    <button id="btn" type="submit">Send Your Message</button>
-                </div>
+                
+                <form>
+                    <center>
+                        <div class="col" id="formField">
+                            <label for="form_name" class="form-label"></label>
+                            <input type="text" class="form-control" id="form_name" placeholder="Enter Your Name" required/>
+                        </div>
+                        <div class="col" id="formField">
+                          <label for="Email" class="form-label"></label>
+                          <input type="email" class="form-control" id="Email" placeholder="Enter Valid Email" required/>
+                        </div>
+                        <div class="col" id="formField">
+                            <label for="message" class="form-label"></label>
+                            <input type="textarea" class="form-control" id="message" placeholder="Enter Your Message" required/>
+                        </div>
+                        <button type="submit" class="btn" id="formBtn">Submit</button>
+                    </center>
+                </form>
             </div>
         </div>
     </div>

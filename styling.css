@@ -1,16 +1,18 @@
 body{
     margin: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Header Starts */
 #header{
     height: 60px;
     font-size: 22px;
+    background-color: #43655A;
 }
 
 #header a{
     text-decoration: none;
-    color: #515861;
+    color: #FFFFFF;
     font-weight: bolder;
     display: inline-block;
     padding: 5px; 
@@ -29,60 +31,65 @@ body{
     width: 100%;
     display: inline-block;
     height: 325px;
-    background-color: #C5C6C7;
+    background-color: #F0FCF8;
 }
 
 /* Profile Picture */
 #profileimg img{
-    border: 0.5px solid white;
-    float: right;
-    margin-right: 12%;
+    border: 0.5px solid #F0FCF8;
+    float: left;
+    margin-left: 12%;
     border-radius: 50%;
+    margin-top: 0.2%;
 }
 
 /* Name */
 #name{
     font-size: 72px;
     text-align: center;
-    margin-left: 28%;
-    color: #515861;
+    margin-right: 17%;
+    color: #43655A;
+}
+
+#name>p{
+    margin-top: 3%;
 }
 /* Main Div Ends */
 
 
 /* About Me Div Starts */
 #about{
-    border: 2px solid #D1E8E2;
+    border: 2px solid #DADDE2;
+    background-color:#DADDE2;
 }
 
 #about h2{
     text-align: center;
-    color: #6e6658;
+    color: #43655A;
     text-transform: uppercase;
-    text-decoration: bold;
+    padding: 1%;
 }
 
 #about p{
     font-size: 18px;
-    color: #515861;
+    color: #43655A;
     font-weight: bold;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0% 6%;
 }
 /* About Me Div Ends */
 
 
 /* Skills Div starts */
 #skills{
-    border: 2px solid #C5C6C7;
-    background-color: #C5C6C7;
+    border: 2px solid #F0FCF8;
+    background-color: #F0FCF8;
 }
 
 #skills h2{
     text-align: center;
-    color: #515861;
+    color: #43655A;
     text-transform: uppercase;
-    text-decoration: bold;
+    padding: 1%;
 }
 
 .skillicons{
@@ -94,26 +101,66 @@ body{
 }
  /* Skills Div Ends */
 
+/* Projects Div starts */
+#projects{
+    border: 2px solid #DADDE2;
+    background-color:#DADDE2;
+}
+
+#projects>h2{
+    text-align: center;
+    color: #43655A;
+    text-transform: uppercase;
+    padding: 1%;
+}
+
+.row{
+    width: 100%;
+}
+
+.card{
+    float: left;
+    margin-left: 7%;
+    width: 40%;
+    height: 400px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    background-color: #F0FCF8;
+    box-shadow: 10px 10px 25px #50765d;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 60%;
+}
+
+.card-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #43655A;
+}
+/* Projects Div Ends */
+
+
  /* Contact Div Starts */
 #contact{
-    height: 570px;
-    border: 2px solid #eae7dc;
+    background-color: #F0FCF8;
+    border: 2px solid #F0FCF8;
     display: inline-block;
     width: 100%;
 }
 
 #contactHeading{
     text-align: center;
-    color: #6e6658;
+    color: #43655A;
     text-transform: uppercase;
-    text-decoration: bold;
+    padding: 1%;
 }
 
 /* Map Starts */
 #map{
     width:45%;
     height:450px;
-    background-color: #eae7dc;
     margin-top: 1%;
     margin-bottom: 5%;  
     margin-left: 5%;
@@ -123,7 +170,7 @@ body{
 #contactCard{
     width: 40%;
     float: right;
-    background-color: #C5C6C7;
+    background-color: #43655A;
     height: 450px;
     margin-right: 5%;
     margin-top: 1%;
@@ -132,37 +179,38 @@ body{
 #contactSubHeading > h3{
     font-size: 30px;
     text-align: center;
-    color: #6e6658;
+    color: #FFFFFF;
     margin-top: 5%;
 }
 
-#field{
-    margin-top: 8%;
+#formField{
+    padding-top: 5%;
+    width: 75%;
 }
 
-/* Input fields in ContactCard Div */
-.inputField{
-    width: 60%;
-    height: 30px;
-    margin-left: 20%;
-    margin-top: 4%;
-    font-size: 15px;
-}
-
-#btn{
-    width: 70%;
-    height: 40px;
-    margin-top: 5%;
-    margin-left: 15%;
-    font-size: 22px;
+#formBtn{
+    width: 30%;
+    height: 50px;
+    margin-top: 14%;
+    font-size: 25px;
+    background-color: #FFFFFF;
+    color: #43655A !important;
 }
 /* ContactCard Div  Ends*/
 /* Contact Div Ends*/
 
 /* Footer starts */
 #footer{
-    border: 2px solid #d8eacc;
-    background-color: #C5C6C7;
+    border: 2px solid #43655A;
+    background-color: #43655A;
+}
+
+#info{
+    padding: 1%;
+}
+
+#footer>center>h3{
+    color: #FFFFFF;
 }
 
 /* Glyphicons in Footer */
@@ -186,51 +234,85 @@ body{
 /* Footer Ends */
 
 /* Media Query starts */
-@media screen and (max-width:1200px) {
-    #profileimg img{
+@media screen and (max-width:1100px) {
+    .card{
+        display: block;
+        margin-left: 20%;
+        width: 60%;
+        height: 440px;
+    }
+    #name{
         margin-right: 10%;
     }
 }
 
-@media screen and (max-width:1000px) {
+@media  screen and (max-width: 900px) {
     #name{
-        margin-left: 18%;
+        margin-right: 0%;
     }
-    #profileimg img{
-        margin-right: 8%;
+    .card {
+        margin-left: 10%;
+        width: 80%;
+        height: 430px;
     }
-}
-
-@media screen and (max-width:800px) {
     #map{
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
         display: block;
     }
     #contact{
         height: 1020px;
+        margin-bottom: 4%;
     }
     #contactCard{
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-right: 10%;
     }
+    #formBtn {
+        margin-top: 6%;
+    }
+    #projects{
+        padding-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #profileimg>img{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width:750px) {
     #name{
-        margin-left: 16%;
-        margin-top: -1%;
+        font-size: 60px;
     }
-    #profileimg img{
-        margin-right: 5%;
+    #name>p {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #formBtn{
+        margin-top: 10%;
+    } 
+}
+
+@media screen and (max-width:650px) {
+    #name{
+        font-size: 50px;
+    }
+    #name>p {
+        margin-top: 13%;
     }
 }
 
 @media screen and (max-width:600px) {
-    #name{
+    .card {
         margin-left: 5%;
-        margin-top: -1%;
+        width: 95%;
     }
-    #profileimg img{
-        margin-right: 2%;
+    #profileimg>img {
+        margin-left: 2%;
     }
-    
 }
 /* Media Query Ends */
